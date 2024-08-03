@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - Mohab-Laravel-WebApp
+name: Build and deploy PHP app to Azure Web App - Mohab-Laravel-Webapp
 
 on:
   push:
@@ -61,15 +61,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_F51E2E3B70FD4C1695334E13CD92F841 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_AED2A7808BC1483BBD8A140D6368D5D0 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_ECE107EC9C3140E1B30DC48E78A8D904 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D8F478A716F04C2387AF8C765C01172A }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4A146E269C6A4EBE8A735350B7D55809 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4F68AB86CD8244C0B3E4B7E640CFF17F }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Mohab-Laravel-WebApp'
+          app-name: 'Mohab-Laravel-Webapp'
           slot-name: 'Production'
           package: .
           
