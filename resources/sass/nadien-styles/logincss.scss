@@ -1,0 +1,95 @@
+div.n-designs {
+    div.container-fluid {
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../../../public/imgs/hello.jpg');
+        /*background-position: center;*/
+        background-size: cover;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+    h1, h2 {
+        padding-bottom: 50px;
+        //color:#999;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        opacity: 0.8;
+
+    }
+    h2 {
+        padding-bottom: 0;
+    }
+    .fp{
+        border-top: 10px;
+    }
+    .form-box {
+        width: 360px;
+        position:relative;
+        margin: 6% auto;
+        background: #fff;
+        padding: 5px;
+        overflow:hidden;
+        bottom: 0px;
+
+
+        opacity: 0.95;
+        border-radius: 15px;
+    }
+    .button-box {
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        border-radius: 30px;
+    }
+    .toggle-btn {
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+    }
+    #btn {
+        width: 110px;
+        height: 100%;
+        background: linear-gradient(to right,#0026ff,#b200ff);
+        border-radius: 100px;
+    }
+    .input-group {
+        margin-left: 25px;
+        width: 280px;
+        transition: .5s;
+    }
+    .input-field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+    }
+    .submit-btn {
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto 30px;
+        border-radius: 100px;
+        outline: none;
+        top:100px;
+
+
+        background: $bg-main-color;
+        border: none;
+        transition: background-color .3s ease-in-out;
+        span {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        &:hover {
+            background-color: #2a9055;
+        }
+    }
+}

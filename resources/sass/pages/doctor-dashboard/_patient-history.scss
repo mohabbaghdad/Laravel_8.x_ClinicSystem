@@ -1,0 +1,71 @@
+div.doctor-dashboard-style {
+    div.container-fluid {
+        div.section {
+            div.medical-history {
+                max-width: 97%;
+                max-height: 300px;
+                overflow-y: auto;
+                div.sub-container {
+                    max-width: 90%;
+                    margin-left: 3%;
+                    margin-top: 3%;
+                    i {
+                        margin-top: 15px;
+                    }
+                    i.fa-edit {
+                        &:hover {
+                            color: #2a9055;
+                        }
+                    }
+                    i.fa-plus {
+                        &:hover {
+                            color: $bg-main-color;
+                        }
+                    }
+                    i.fa-trash {
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                    i.active {
+                        color: #2a9055;
+                    }
+                    div.data-container {
+                        padding-left: 10px;
+                        label {
+                            font-size: 20px;
+                            width: 100%;
+                        }
+                        textarea {
+                            font-size: 18px;
+                            max-height: 200px;
+                            max-width: 75%;
+                            overflow-y: paged-y-controls;
+                        }
+                    }
+                    input, select {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    div.doctor-dashboard-style {
+        div.container-fluid {
+            div.section {
+                div.medical-history {
+                    div.sub-container {
+                        div.data-container {
+                            textarea {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
